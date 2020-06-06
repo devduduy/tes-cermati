@@ -1,0 +1,257 @@
+body {
+    box-sizing: border-box;
+}
+
+/* Notification Panel */
+div.alert-notification {
+    background-color: #e5e5e5;
+    font-size: 14px;
+    position: relative;
+}
+
+p.content-notification {
+    max-width: 720px;
+    margin: auto;
+}
+
+.alert-notification .got-it {
+    color: white;
+    border: none;
+    border-radius: 3px;
+    position: absolute;
+    top: 17px;
+    right: 0;
+    left: 68%;
+    bottom: 0;
+    width: 70px;
+    height: 35px;
+}
+
+.got-it:hover {
+    cursor: pointer;
+    opacity: 0.7;
+}
+
+.text-blue {
+    color: blue;
+}
+
+@media (max-width:977px) and (min-width:576px) {
+    .alert-notification .got-it {
+        left: 80%;
+    }
+}
+
+@media (max-width:500px) {
+    .alert-notification .got-it {
+        left: 10px;
+        top: 100px;
+    }
+
+    div.alert-notification {
+        padding-bottom: 50px;
+    }
+}
+
+
+​ ​
+/* Landing Image */
+
+div.landing-image {
+    position: relative;
+}
+
+.landing-image .desk {
+    width: 100%;
+    height: 550px;
+    background-size: contain;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+}
+
+.landing-image .logo {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    z-index: 98;
+    top: 15%;
+    right: 0;
+    bottom: 0;
+    left: 3%;
+}
+
+.landing-color-2 {
+    width: 100%;
+    height: 550px;
+    position: absolute;
+    z-index: 97;
+    opacity: 0.7;
+    background-color: #133785da;
+}
+
+.landing-color {
+    width: 100%;
+    height: 550px;
+    position: absolute;
+    z-index: 96;
+    opacity: 0.4;
+    background-color: #174195bd;
+}
+
+.content-landing {
+    position: absolute;
+    z-index: 98;
+    text-align: center;
+    top: 40%;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+
+@media (max-width:500px) {
+    .content-landing {
+        top: 45%;
+    }
+}
+
+@media (max-width:500px) {
+    .landing-image .logo {
+        top: 30%;
+        left: 5%;
+        width: 40px;
+        height: 40px;
+    }
+}
+
+
+.content-landing p.name {
+    color: rgb(226, 226, 226);
+    font-size: 1.7rem;
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+
+.content-landing p.job {
+    color: rgb(238, 238, 238);
+    font-size: 1.2rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.content-landing p.hire {
+    color: rgb(226, 226, 226);
+    font-size: .8rem;
+}
+
+.content-landing button {
+    font-size: 14px;
+    color: white;
+    padding: 10px 20px;
+    background-color: transparent;
+    text-transform: uppercase;
+    border: 2px solid white;
+    font-weight: 500;
+}
+
+.content-landing button:hover {
+    cursor: pointer;
+    background-color: white;
+    color: #007bc1;
+    font-weight: 500 !important;
+}
+
+/* Highlight Panel */
+
+section.highlight-panel {
+    background-color: #e5e5e5;
+    color: #444;
+}
+
+.highlight-header {
+    padding: 45px;
+}
+
+.highlight-content {
+    border: 3px groove #fff;
+    margin-bottom: 25px;
+    padding: 15px;
+}
+
+.highlight-content p {
+    font-size: 14px;
+}
+
+/* Footer */
+.footer {
+    padding: 22px;
+    background-color: #091838;
+}
+
+.footer p {
+    color: #e5e5e5;
+    font-weight: 100;
+    font-size: 14px;
+}
+
+/* Popup newsletter */
+
+#spopup {
+    background: #007bc1;
+    -moz-box-shadow: inset 0 0 3px #333;
+    -webkit-box-shadow: inset 0 0 3px #333;
+    box-shadow: inner 0 0 3px #333;
+    padding: 17px 14px 17px 14px;
+    max-width: 640px;
+    position: fixed;
+    bottom: 0;
+    left: 2px;
+    display: none;
+    z-index: 99;
+}
+
+#spopup p {
+    font-weight: 200;
+    font-size: 14px;
+    color: rgb(226, 226, 226);
+}
+
+#spopup .email-button input {
+    width: 78%;
+    margin-right: 5px;
+    padding: 2px 12px;
+    border-radius: 3px;
+    border: none;
+}
+
+#spopup .email-button input::placeholder {
+    font-size: 14px;
+}
+
+#spopup .email-button button {
+    background-color: orange;
+    /* background-color: #FF8000; */
+    /* background color in excercise pdf is #FF8000, but after i look the color result like is not same with the picture*/
+    color: white;
+    font-size: 14px;
+    outline: none;
+    border: none;
+    border-radius: 3px;
+    width: 115px;
+    padding: 4px;
+}
+
+@media (max-width:500px) {
+    #spopup .email-button input {
+        width: 100%;
+        padding: 4px 12px;
+        display: block;
+        margin-bottom: 15px;
+    }
+
+    #spopup .email-button button {
+        width: 100%;
+        display: block;
+        padding: 4px;
+    }
+}
